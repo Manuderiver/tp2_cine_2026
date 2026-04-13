@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cine Aurora 📽️ - Login</title>
     <meta name="description" content="Cine Aurora - Login" />
+
     <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -13,30 +14,41 @@
     <header>
       <div>
         <h1>Cine Aurora</h1>
-        <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
+        <img src="../assets/favicon/logo-cine.png" alt="logo cine aurora" />
       </div>
-      <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="./estrenos.html">Próximos estrenos</a>
-          <a href="../index.html">Volver</a>
-        </nav>
-      </div>
+
+      <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="./estrenos.html">Próximos estrenos</a>
+        <a href="../index.html">Volver</a>
+      </nav>
     </header>
-    <main>
-      <form action="perfil.html">
+
+    <main class="login-container">
+
+      <form class="login-form" action="perfil.html">
+
         <h2>Acceso Clientes</h2>
+
         <div>
-          <label>Email</label>
-          <input type="email" required />
+          <label for="email">Email</label>
+          <input id="email" type="email" required />
         </div>
+
         <div>
-          <label>Contraseña</label>
-          <input type="password" required />
+          <label for="password">Contraseña</label>
+          <input id="password" type="password" required />
         </div>
+
         <button type="submit">Ingresar</button>
-        <p>¿No eres miembro? <a href="registro.html">Regístrate</a></p>
+
+        <p>
+          ¿No eres miembro?
+          <a href="./registro.html">Regístrate</a>
+        </p>
+
       </form>
+
     </main>
 
     <footer>
