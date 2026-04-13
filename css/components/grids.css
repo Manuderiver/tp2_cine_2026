@@ -1,0 +1,13 @@
+.movies-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .movies-container {
+        grid-template-columns: 1fr;
+    }
+}

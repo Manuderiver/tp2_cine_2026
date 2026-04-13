@@ -1,33 +1,59 @@
-@import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
+/* IMPORTS DE COMPONENTES */
+@import url("./components/poster.css");
+@import url("./components/grids.css");
+@import url("./components/card-vertical.css");
+@import url("./components/button.css");
+@import url("./components/nav.css");
+@import url("./components/footer.css");
 
-/* Paletas de colores que pueden usar: */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Paleta 1: */
-/*:root {
-  --color-fondo: #0f172a;
-  --color-superficie: #1e293b;
-  --color-primario: #e11d48;
-  --color-secundario: #f59e0b;
-  --color-texto: #f8fafc;
-  --color-texto-suave: #94a3b8;
-}*/
-
-/* Paleta 2: */
-/*:root {
-  --color-fondo: #fff8e7;
-  --color-superficie: #ffe8a3;
-  --color-primario: #e63946;
-  --color-secundario: #ffb703;
-  --color-texto: #1d3557;
-  --color-texto-suave: #457b9d;
-}*/
-
-/* Paleta 3: */
-/*:root {
+/* PALETA (usamos la 3 - estilo cine/netflix) */
+:root {
   --color-fondo: #141414;
   --color-superficie: #1f1f1f;
   --color-primario: #e50914;
   --color-secundario: #00b4d8;
   --color-texto: #ffffff;
   --color-texto-suave: #b3b3b3;
-}*/
+
+  --spacing: 8px;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+/* HEADER */
+header {
+  padding: 16px;
+  background-color: var(--color-superficie);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* NAV */
+nav a {
+  margin-left: 16px;
+  color: var(--color-texto);
+  text-decoration: none;
+}
+
+/* TITULOS */
+h1, h2, h3 {
+  margin-bottom: 8px;
+}
+
+/* SECTION */
+section {
+  padding: 16px;
+}
